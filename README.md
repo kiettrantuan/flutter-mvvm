@@ -1,6 +1,6 @@
 # f_mvvm_1
 
-Flutter + MVVM
+Flutter + MVVM with Provider & http
 
 ## Getting Started
 
