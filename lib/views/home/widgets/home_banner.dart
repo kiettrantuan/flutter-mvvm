@@ -32,6 +32,7 @@ class HomeBanner extends StatelessWidget {
                               child: CircularProgressIndicator(
                                 backgroundColor:
                                     Theme.of(context).colorScheme.secondary,
+                                color: Colors.teal,
                                 value: progress.expectedTotalBytes != null
                                     ? (progress.cumulativeBytesLoaded /
                                         progress.expectedTotalBytes!)

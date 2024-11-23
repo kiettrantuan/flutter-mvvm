@@ -45,13 +45,15 @@ class HomeScreen extends StatelessWidget {
         builder: (ctx, banner, __) => IgnorePointer(
           ignoring: banner.isLoading,
           child: FloatingActionButton(
+            tooltip: 'Reload',
+            child: const Icon(Icons.refresh),
+            backgroundColor: banner.isLoading ? Colors.black54 : null,
+            foregroundColor: banner.isLoading ? Colors.grey : null,
             onPressed: () {
               banner.fetchBanners(
                   page: 1 + Random().nextInt(10),
                   limit: 3 + Random().nextInt(10));
             },
-            tooltip: 'Reload',
-            child: const Icon(Icons.refresh),
           ),
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
