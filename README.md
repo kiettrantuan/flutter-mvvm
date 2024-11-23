@@ -1,6 +1,6 @@
 # f_mvvm_1
 
-Flutter + MVVM with provider & http
+Flutter + MVVM with provider & http: Show images from [picsum](https://picsum.photos/).
 
 ## Getting Started
 
